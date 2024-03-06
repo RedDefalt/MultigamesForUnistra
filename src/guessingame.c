@@ -20,3 +20,10 @@ int existe_deja(struct  guessingame *game, int nbr) {
     }
     return 0;
 }
+
+void add_elem(struct  guessingame *game, int nbr) {
+    if (existe_deja(game, nbr) == 0) {
+        game->ensemble[game->nbr_elem] = nbr;
+        game->nbr_elem++;
+    }
+}
