@@ -1,4 +1,6 @@
-#include <time.h>
+#ifndef _TIME_H
+    #include <time.h>
+#endif
 
 int alea() {
     srand(time(NULL));
