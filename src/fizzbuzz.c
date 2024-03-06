@@ -20,3 +20,10 @@ void condition_controll(int user_input) {
         printf("%d\n",user_input);
     }
 }
+
+int fizzbuzz() {
+    int value = user_input();
+    for (int i=1; i<=value; i++) {
+        fizzbuzz(i);
+    }
+}
