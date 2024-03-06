@@ -1,3 +1,5 @@
+#include "alea.c"
+
 int user_input() {
     int valeur;
     printf("veuiller entrer un nbr entre 0 et 99\n");
@@ -15,4 +17,12 @@ int continues(user_input, value_to_guess){
         return 1;
     }
     return 0;
+}
+
+void instruction(int user_input, int value_to_guess) {
+    if (user_input > value_to_guess) {
+        printf("Essayer avec une valeur plus petite\n");
+    } else {
+        printf("Essayer avec une valeur plus grande\n");
+    }
 }
