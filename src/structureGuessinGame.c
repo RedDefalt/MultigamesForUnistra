@@ -1,5 +1,9 @@
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef _STDLIB_H
+    #include <stdlib.h>
+#endif
+#ifndef _STDIO_H
+    #include <stdio.h>
+#endif
 #include "../inc/structureGuessinGame.h"
 
 structureGuessinGame* init_game(void) {
