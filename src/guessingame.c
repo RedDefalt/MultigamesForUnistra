@@ -9,3 +9,10 @@ int user_input() {
         return valeur;
     }
 }
+
+int continues(user_input, value_to_guess){
+    if (user_input != value_to_guess) {
+        return 1;
+    }
+    return 0;
+}
