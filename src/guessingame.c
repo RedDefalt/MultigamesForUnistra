@@ -27,3 +27,7 @@ void add_elem(struct  guessingame *game, int nbr) {
         game->nbr_elem++;
     }
 }
+
+int taille(struct  guessingame *game) {
+    return game -> nbr_elem;
+}
