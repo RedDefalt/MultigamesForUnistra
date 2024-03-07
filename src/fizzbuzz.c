@@ -5,6 +5,8 @@ int user_input() {
     if (valeur < 1 || valeur > 99) {
         printf("valeur incorrect, veuillez recommencer\n");
         user_input();
+    } else {
+        return valeur;
     }
     return valeur;
 }
@@ -21,9 +23,9 @@ void condition_controll(int user_input) {
     }
 }
 
-int fizzbuzz() {
+void fizzbuzz() {
     int value = user_input();
     for (int i=1; i<=value; i++) {
-        fizzbuzz(i);
+        condition_controll(i);
     }
 }
