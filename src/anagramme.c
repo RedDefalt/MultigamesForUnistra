@@ -15,3 +15,18 @@ int sameSize(char mot1[], char mot2[]) {
     }
     return 0;
 }
+
+void trieabulle(char mot[]) {
+    int i, j, tmp;
+    int size = length(mot);
+
+    for (i = 0; i < size - 1; i++) {
+        for (j = 0; j < size - i - 1; j++) {
+            if (mot[j] > mot[j + 1]) {
+                tmp = mot[j];
+                mot[j] = mot[j + 1];
+                mot[j + 1] = tmp;
+            }
+        }
+    }
+}
