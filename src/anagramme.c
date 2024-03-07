@@ -1,3 +1,7 @@
+#ifndef _STDIO_H
+    #include <stdio.h>
+#endif
+
 int length(char *str) {
     int longueur = 0;
     
