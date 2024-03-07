@@ -30,3 +30,8 @@ void trieabulle(char mot[]) {
         }
     }
 }
+
+void str_user_input(char mot[]) {
+    printf("Entrer un mot : \n");
+    scanf("%s", mot);
+}
