@@ -35,3 +35,23 @@ void str_user_input(char mot[]) {
     printf("Entrer un mot : \n");
     scanf("%s", mot);
 }
+
+void anagramme() {
+    char mot1[100];
+    str_user_input(mot1);
+    char mot2[100];
+    str_user_input(mot2);
+
+    if (sameSize(mot1, mot2)) {
+        trieabulle(mot1);
+        trieabulle(mot2);
+        for (int i = 0; mot1[i] != '\0'; i++) {
+            if (mot1[i] != mot2[i]) {
+                printf("pas un anagramme\n");
+            }
+        }
+        printf("c'est un anagramme\n");
+    } else {
+        printf("pas un anagramme\n");
+    }
+}
