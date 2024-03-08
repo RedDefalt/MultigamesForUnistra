@@ -1,3 +1,7 @@
+#ifndef _STDIO_H
+    #include <stdio.h>
+#endif
+
 int user_input() {
     int valeur;
     printf("Donne moi un nombre entre 1 et 99 : ");
