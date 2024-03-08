@@ -35,7 +35,7 @@ Prerequis
 =
 Cette projet naicessite gcc et makefile si vous ne les avez pas veuillez les installer
 
-Pour obtenir l'executable <strong style="color: lightblue";>unistragames</strong> il vous suffit de taper la commande suivante
+Pour obtenir l'executable unistragames il vous suffit de taper la commande suivante
 
     make
 
