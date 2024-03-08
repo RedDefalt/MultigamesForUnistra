@@ -1,7 +1,10 @@
 #include "./../inc/alea.h"
-#include "structureGuessinGame.c"
+#include "./../inc/structureGuessinGame.h"
 #ifndef _STDLIB_H
     #include <stdlib.h>
+#endif
+#ifndef _STDIO_H
+    #include <stdio.h>
 #endif
 
 int guessingame_user_input() {
