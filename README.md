@@ -15,11 +15,12 @@ Table des Matières
 
 * [Crédits](#Crédits)
 
-Games4Unistra
+Video
 =
-
 [![Video](asset/Games4Unistra.png)](https://youtu.be/l5F-b4VGPxU)
 
+Games4Unistra
+=
 ```
  _____                               ___   _   _       _     _
 |  __ \                             /   | | | | |     (_)   | |
