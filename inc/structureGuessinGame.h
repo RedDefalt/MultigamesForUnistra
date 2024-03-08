@@ -1,3 +1,7 @@
+#ifndef _STDIO_H
+    #include <stdio.h>
+#endif
+
 #define TAILLE 200
 
 typedef struct guessingame {
@@ -5,3 +9,32 @@ typedef struct guessingame {
     int nbr_elem;
 } structureGuessinGame;
 
+structureGuessinGame* init_game(void) {
+    structureGuessinGame* game = malloc(sizeof(structureGuessinGame));
+    if (game == NULL) {
+        printf("OUT OF MEM");
+        exit(-1);
+    }
+    game->nbr_elem = 0;
+    return game;
+}
+
+int existe_deja(struct  guessingame *game, int nbr) {
+    int index_delem;
+    for (index_delem = 0; game->ensemble[index_delem] != nbr && index_delem < game->nbr_elem; index_delem++);
+    if (game->ensemble[index_delem] == nbr) {
+        return 1;
+    }
+    return 0;
+}
+
+void add_elem(struct  guessingame *game, int nbr) {
+    if (existe_deja(game, nbr) == 0) {
+        game->ensemble[game->nbr_elem] = nbr;
+        game->nbr_elem++;
+    }
+}
+
+int taille(struct  guessingame *game) {
+    return game -> nbr_elem;
+}
