@@ -18,7 +18,7 @@ Table des Matières
 Games4Unistra
 =
 
-[![Video](asset\Games4Unistra.png)](https://youtu.be/l5F-b4VGPxU)
+[![Video](asset/Games4Unistra.png)](https://youtu.be/l5F-b4VGPxU)
 
 ```
  _____                               ___   _   _       _     _
