@@ -1,6 +1,6 @@
 int user_input() {
     int valeur;
-    printf("veuiller entrer un nombre entre 1 et 99\n");
+    printf("Donne moi un nombre entre 1 et 99 : ");
     scanf("%d", &valeur);
     if (valeur < 1 || valeur > 99) {
         printf("valeur incorrect, veuillez recommencer\n");
@@ -24,6 +24,7 @@ void condition_controll(int user_input) {
 }
 
 void fizzbuzz() {
+    printf("Donne moi un nombre entre 1 et 99 et je te dirais\nFIZZ si c'est un multiple de 3\nBUZZ si c'est un multiple de 5 et\nFIZZBUZZ si c'est les deux en même temps !\n");
     int value = user_input();
     for (int i=1; i<=value; i++) {
         condition_controll(i);
