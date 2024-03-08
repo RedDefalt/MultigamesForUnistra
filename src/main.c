@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "./../inc/globalvars.h"
-#include "guessingame.c"
-#include "fizzbuzz.c"
-#include "anagramme.c"
 
+void anagramme();
+void fizzbuzz();
+void guessingame();
 int main();
 
 void rejoue(char jeu) {
