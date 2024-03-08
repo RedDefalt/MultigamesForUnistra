@@ -36,11 +36,12 @@ void trieabulle(char mot[]) {
 }
 
 void str_user_input(char mot[]) {
-    printf("Entrer un mot : \n");
+    printf("Entre un mot : \n");
     scanf("%s", mot);
 }
 
-void anagramme() {
+int anagramme() {
+    printf("Donne moi deux mots et je te dis si elles sont des anagrammes !\n");
     char mot1[100];
     str_user_input(mot1);
     char mot2[100];
@@ -51,11 +52,15 @@ void anagramme() {
         trieabulle(mot2);
         for (int i = 0; mot1[i] != '\0'; i++) {
             if (mot1[i] != mot2[i]) {
-                printf("pas un anagramme\n");
+                printf("C'est pas un anagramme\n");
+                return 0;
             }
         }
-        printf("c'est un anagramme\n");
+        printf("C'est un anagramme\n");
+        return 0;
     } else {
-        printf("pas un anagramme\n");
+        printf("C'est pas un anagramme\n");
+        return 0;
     }
+    return 0;
 }
